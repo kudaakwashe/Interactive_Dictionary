@@ -20,13 +20,14 @@ def translate(word):
         if yn == "y":
             return data[get_close_matches(word, data.keys())[0]]
         elif yn == "n":
-            return "The word doesn't exist. Please double check it."
+            return "The word doesn't exist. Please double check it. "
+
         else:
             return "We didnt understand your entry."
 
     elif len(get_close_matches(word, data.keys())) == 0:
         return "The word doesn't exist. Please double check it."
-        
+
     else:
         return "The word doesn't exist. Please double check it."
 
